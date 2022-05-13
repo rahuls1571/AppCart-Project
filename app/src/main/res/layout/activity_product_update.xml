@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:text="@string/product_add"
+        android:text="@string/product_update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -44,12 +44,12 @@
                 />
 
             <EditText
-                android:id="@+id/product_name"
+                android:id="@+id/update_product_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="@color/black"
-             />
+                />
 
         </LinearLayout>
 
@@ -72,7 +72,7 @@
                 />
 
             <EditText
-                android:id="@+id/product_price"
+                android:id="@+id/update_product_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -100,7 +100,7 @@
                 />
 
             <EditText
-                android:id="@+id/product_quantity"
+                android:id="@+id/update_product_quantity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -128,7 +128,7 @@
                 />
 
             <EditText
-                android:id="@+id/product_description"
+                android:id="@+id/update_product_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -146,7 +146,7 @@
             >
 
             <TextView
-                android:text= "Discount %"
+                android:text="@string/discount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -155,7 +155,7 @@
                 />
 
             <EditText
-                android:id="@+id/product_discount"
+                android:id="@+id/update_product_discount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -173,7 +173,7 @@
             >
 
             <ImageView
-                android:id="@+id/product_image"
+                android:id="@+id/update_product_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/default_image_background"
@@ -185,13 +185,15 @@
                 android:layout_height="100dp"
                 android:gravity="center"
                 >
-            <Button
-                android:id="@+id/product_image_choose"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/choose_image"
-                android:layout_gravity="center"
-                />
+
+                <Button
+                    android:id="@+id/update_product_image_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_image"
+
+                    />
+
             </LinearLayout>
 
         </LinearLayout>
@@ -207,11 +209,11 @@
             >
 
             <Button
-                android:id="@+id/product_save"
+                android:id="@+id/update_product_update"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="@string/save"
+                android:text="Update"
                 />
 
         </LinearLayout>
@@ -227,11 +229,11 @@
             >
 
             <Button
-                android:id="@+id/product_view"
+                android:id="@+id/update_product_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="@string/product_view"
+                android:text="Back"
                 />
 
         </LinearLayout>

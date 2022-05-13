@@ -1,0 +1,138 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCartActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view_addcart"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_height="match_parent"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/darkblue"
+        >
+        <!-- Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:text="Total Price :- "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/product_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <!-- discount -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:text="Total Discount :- "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/product_total_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <!-- tax -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:text="Total Tax :- "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/product_total_tax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:text="Total Cost :- "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/product_total_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

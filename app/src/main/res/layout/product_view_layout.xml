@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/room_product_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_image_background"
+                android:contentDescription="TODO" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/room_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/room_product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/room_product_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="quantitiy"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/room_product_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="description"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/room_product_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="discount"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/room_product_addcart"
+                android:text="Add Cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="10sp"
+
+                />
+
+            <Button
+                android:id="@+id/room_product_update"
+                android:text="Update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="10sp"
+                />
+
+            <Button
+                android:id="@+id/room_product_delete"
+                android:text="Delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="10sp"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Quantity"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/dialog_box_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/dialog_box_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/dialog_box_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="OK"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
